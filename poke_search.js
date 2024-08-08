@@ -1,4 +1,5 @@
-async function fetchPokemonData(pokemonName) {
+async function fetchPokemonData() {
+    const pokemonName = document.getElementById('pokeName').value;
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
     const pokemonData = await response.json();
     console.log(pokemonData);
@@ -7,7 +8,7 @@ async function fetchPokemonData(pokemonName) {
 
 const pokemonName = document.getElementById('pokeName').value;
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('formdata', async () => {
     const pokemonData = await fetchPokemonData(pokemonName);
     const pokeId = document.getElementById('Id');
     const pokeName = document.getElementById('Name');
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     pokeHeld1.textContent = `Held Item 1: ${pokemonData.held_items[0].item.name}`;
     pokeHeld2.textContent = `Held Item 2: ${pokemonData.held_items[1].item.name}`;
 })
-
+console.log(pokemonData);
 
 
 
