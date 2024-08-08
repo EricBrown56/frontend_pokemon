@@ -20,24 +20,23 @@
         </p>
     </div>
     <div class="row">
-        <form onsubmit="fetchPokemonData(pokemonName)">
+        <form onsubmit="handleSubmit(event)">
             <div class="col-lg-4">
                 <label for="pokeName" class="form-label">Pokémon Name or ID</label>
                 <input type="text" class="form-control" id="pokeName" 
                     placeholder="Pokémon Name or ID">
             </div>
-            
+            <div class="mt-2 mb-5 button">
+                <button type="submit" class="btn btn-warning">Search Pokémon</button>
+        
+            </div>
         </form>
 
-        <div class="mt-2 mb-5 button">
-            <button type="submit" class="btn btn-warning" 
-                onclick="fetchPokemonData(pokemonName)">Search Pokémon</button>
-    
-        </div>
+        
 
         <div class="row">
             <div class="col-lg-6 box mb-5">
-                <div class="box2">
+                <div class="box2 platypi-normal">
                     <div class="box3">
                         <div class="box4">
                             <p id="Id">Id: </p>
@@ -60,9 +59,9 @@
                             <p id="Defense">Defense: </p>
                         </div>
                     </div>
-                    <div class="box11" id="img">
+                    <img class="box11" id="Img"></img>
 
-                    </div>
+                    
                     <div class="box12">
                         <div class="box13">
                             <p id="Height">Height: </p>
@@ -73,18 +72,18 @@
                     </div>
                     <div class="box15">
                         <div class="box16">
-                            <p id="Ability1">Ability1: </p>
+                            <p id="Move1">Move1: </p>
                         </div>
                         <div class="box17">
-                            <p id="Ability2">Ability2: </p>
+                            <p id="Move2">Move2: </p>
                         </div> 
                     </div>
                     <div class="box18">
                         <div class="box19">
-                            <p id="Held1">Held Item 1: </p>
+                            <p id="Ability1">Ability 1: </p>
                         </div>
                         <div class="box20">
-                            <p id="Held2">Held Item 2: </p>
+                            <p id="Ability2">Ability 2: </p>
                         </div>
                     </div>  
                 </div>

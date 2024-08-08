@@ -40,7 +40,7 @@ p {
     text-align: center;
 }
 
-img {
+.img {
     width: 400px;
     height: 400px;
     margin: 10px;
@@ -49,7 +49,7 @@ img {
     transition: 0.3s;
 }
 
-img:hover {
+.img:hover {
     transform: scale(1.1);
 }
 
@@ -140,39 +140,43 @@ button:hover {
         width: 100%;
         height: 100px;
         padding: 10px;
-        border: solid 2px black;
+        background-color: rgb(102, 66, 48);
+        
     }
 
     .box4 {
         width: 20%;
         height: 70px;
         padding: 10px;
-        border: solid 2px black;
+        
+        border-radius: 10%;
     }
 
     .box5 {
         width: 50%;
         height: 70px;
         padding: 10px;
-        border: solid 2px black;
+       
         margin-left: 130px;
         margin-top: -70px;
+       
     }
 
     .box6 {
         width: 25%;
         height: 70px;
         padding: 10px;
-        border: solid 2px black;
+        
         margin-left: 450px;
         margin-top: -70px;
+        border-radius: 10%;
     }
 
     .box7 {
         width: 100%;
         height: 70px;
         padding: 10px;
-        border: solid 2px black;
+        background-color: sienna;
         margin-top: 10px;
     }
 
@@ -180,7 +184,8 @@ button:hover {
         width: 20%;
         height: 50px;
         padding: 10px;
-        border: solid 2px black;
+        
+        border-radius: 10%;
         
     }
 
@@ -188,18 +193,20 @@ button:hover {
         width: 50%;
         height: 50px;
         padding: 10px;
-        border: solid 2px black;
+        
         margin-left: 130px;
         margin-top: -50px;
+        
     }
 
     .box10 {
         width: 25%;
         height: 50px;
         padding: 10px;
-        border: solid 2px black;
+        
         margin-left: 450px;
         margin-top: -50px;
+        border-radius: 10%;
     }
 
     .box11 {
@@ -214,8 +221,8 @@ button:hover {
         width: 100%;
         height: 70px;
         padding: 10px;
-        border: solid 2px black;
         margin-top: 10px;
+        background-color: #1f5e77;
         
     }
 
@@ -223,7 +230,8 @@ button:hover {
         width: 50%;
         height: 50px;
         padding: 10px;
-        border: solid 2px black;
+        
+        
         
     }
 
@@ -231,7 +239,7 @@ button:hover {
         width: 50%;
         height: 50px;
         padding: 10px;
-        border: solid 2px black;
+        
         margin-left: 310px;
         margin-top: -50px;
     }
@@ -240,7 +248,7 @@ button:hover {
         width: 100%;
         height: 200px;
         padding: 10px;
-        border: solid 2px black;
+        background-color: saddlebrown;
         margin-top: 10px;
     }
 
@@ -248,7 +256,7 @@ button:hover {
         width: 100%;
         height: 80px;
         padding: 10px;
-        border: solid 2px black;
+        
         
         
     }
@@ -257,7 +265,7 @@ button:hover {
         width: 100%;
         height: 80px;
         padding: 10px;
-        border: solid 2px black;
+        
         margin-top: 10px;
         
     }
@@ -266,16 +274,15 @@ button:hover {
         width: 100%;
         height: 170px;
         padding: 10px;
-        border: solid 2px black;
         margin-top: 10px;
-        
+        background-color: #1f2977;
     }
 
     .box19 {
         width: 100%;
         height: 60px;
         padding: 10px;
-        border: solid 2px black;
+        
         
         
     }
@@ -284,7 +291,7 @@ button:hover {
         width: 100%;
         height: 60px;
         padding: 10px;
-        border: solid 2px black;
+        
         margin-top: 10px;
         
     }

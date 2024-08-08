@@ -6,10 +6,11 @@ async function fetchPokemonData() {
     return pokemonData;
 }
 
-const pokemonName = document.getElementById('pokeName').value;
 
-document.addEventListener('formdata', async () => {
-    const pokemonData = await fetchPokemonData(pokemonName);
+
+const handleSubmit = async (event) => {
+    event.preventDefault();
+    const pokemonData = await fetchPokemonData();
     const pokeId = document.getElementById('Id');
     const pokeName = document.getElementById('Name');
     const pokeExp = document.getElementById('Exp');
@@ -21,8 +22,8 @@ document.addEventListener('formdata', async () => {
     const pokeWeight = document.getElementById('Weight');
     const pokeAbility1 = document.getElementById('Ability1');
     const pokeAbility2 = document.getElementById('Ability2');
-    const pokeHeld1 = document.getElementById('Held1');
-    const pokeHeld2 = document.getElementById('Held2');
+    const pokeMove1 = document.getElementById('Move1');
+    const pokeMove2 = document.getElementById('Move2');
 
     pokeId.textContent = `ID: ${pokemonData.id}`;
     pokeName.textContent = `Name: ${pokemonData.name}`;
@@ -30,15 +31,15 @@ document.addEventListener('formdata', async () => {
     pokeHp.textContent = `HP: ${pokemonData.stats[0].base_stat}`;
     pokeAttack.textContent = `Attack: ${pokemonData.stats[1].base_stat}`;
     pokeDefense.textContent = `Defense: ${pokemonData.stats[2].base_stat}`;
-    pokeImg.src = pokemonData.sprites.front_default;
+    pokeImg.src = pokemonData['sprites']['front_default'];
     pokeHeight.textContent = `Height: ${pokemonData.height}'`;
-    pokeWeight.textContent = `Weight: ${pokemonData.weight}`;
+    pokeWeight.textContent = `Weight: ${pokemonData.weight} lbs`;
     pokeAbility1.textContent = `Ability 1: ${pokemonData.abilities[0].ability.name}`;
     pokeAbility2.textContent = `Ability 2: ${pokemonData.abilities[1].ability.name}`;
-    pokeHeld1.textContent = `Held Item 1: ${pokemonData.held_items[0].item.name}`;
-    pokeHeld2.textContent = `Held Item 2: ${pokemonData.held_items[1].item.name}`;
-})
-console.log(pokemonData);
+    pokeMove1.textContent = `Move 1: ${pokemonData.moves[0].move.name}`;
+    pokeMove2.textContent = `Move 2: ${pokemonData.moves[1].move.name}`;
+}
+
 
 
 
