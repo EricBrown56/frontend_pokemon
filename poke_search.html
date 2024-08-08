@@ -20,8 +20,7 @@
         </p>
     </div>
     <div class="row">
-        <form onsubmit="fetchPokemonData(pokemonName)" 
-            onclick="fetchPokemonData(pokemonName)">
+        <form onsubmit="fetchPokemonData(pokemonName)">
             <div class="col-lg-4">
                 <label for="pokeName" class="form-label">Pokémon Name or ID</label>
                 <input type="text" class="form-control" id="pokeName" 
@@ -31,7 +30,8 @@
         </form>
 
         <div class="mt-2 mb-5 button">
-            <button type="submit" class="btn btn-warning">Search Pokémon</button>
+            <button type="submit" class="btn btn-warning" 
+                onclick="fetchPokemonData(pokemonName)">Search Pokémon</button>
     
         </div>
 
